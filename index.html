@@ -1,0 +1,165 @@
+<head>
+	<title>DBolical</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="moddb, indiedb, dbolical, games, mods, addons, customisation, maps, models, network, community, publishing, investment" />
+	<meta name="description" content="Gaming communities are our thing, we run GameFront for PC games, IndieDB for independent games, ModDB for user-created game content and modularity.games our publishing and investment label." />
+	<meta name="robots" content="index,follow"></meta>
+	<meta name="robots" content="all"></meta>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<style type="text/css">
+	body {
+		background: #000;
+		color: #000;
+		font-family: "Trebuchet MS", Arial, Verdana, Tahoma, sans-serif;
+		font-size: 62.5%;
+		padding: 0;
+		margin: 0;
+		line-height: 1.5em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	a {
+		color: #c00;
+		text-decoration: underline;
+	}
+
+	a:hover {
+		color: #f33;
+		text-decoration: none;
+	}
+
+	img {
+		display: none;
+		max-width: 80%;
+		height: auto;
+	}
+
+	.catchcry { font-size: 1.5em; display: none; }
+	.defaultbody div { background: #fff; }
+	.defaultbody .defaultcatchcry { display: inline; }
+	.defaultbody .default { display: inline; }
+
+	.moddbbody div { background: #c00; background: linear-gradient(-135deg, #900 0%,#f00 100%); }
+	.moddbbody a { color: #fff; }
+	.moddbbody a.moddb, .moddbbody a:hover { color: #f99; text-decoration: none; }
+	.moddbbody .defaultcatchcry { display: none; }
+	.moddbbody .moddbcatchcry { display: inline; }
+	.moddbbody .moddblogo { display: inline; }
+	.moddbbody .default { display: none; }
+
+	.indiedbbody div { background: #390; background: linear-gradient(-135deg, #390 0%,#6f0 100%); }
+	.indiedbbody a { color: #fff; }
+	.indiedbbody a.indiedb, .indiedbbody a:hover { color: #9f6; text-decoration: none; }
+	.indiedbbody .defaultcatchcry { display: none; }
+	.indiedbbody .indiedbcatchcry { display: inline; }
+	.indiedbbody .indiedblogo { display: inline; }
+	.indiedbbody .default { display: none; }
+
+	.gamefrontbody div { background: #287ed5; }
+	.gamefrontbody a { color: #fff; }
+	.gamefrontbody a.gamefront, .gamefrontbody a:hover { color: #a9d2fb; text-decoration: none; }
+	.gamefrontbody .defaultcatchcry { display: none; }
+	.gamefrontbody .gamefrontcatchcry { display: inline; }
+	.gamefrontbody .gamefrontlogo { display: inline; }
+	.gamefrontbody .default { display: none; }
+
+	.modularitybody div { background: #0e2e31; background: linear-gradient(-135deg, #0e2e31 0%,#030d0e 100%); }
+	.modularitybody a { color: #fff; }
+	.modularitybody a.modularity, .modularitybody a:hover { color: #f8e800; text-decoration: none; }
+	.modularitybody .defaultcatchcry { display: none; }
+	.modularitybody .modularitycatchcry { color: #f8e800; display: inline; }
+	.modularitybody .modularitylogo { display: inline; }
+	.modularitybody .default { display: none; }
+
+	.contactbody div { background: #fff; }
+	</style>
+</head>
+
+<body class="defaultbody">
+<div align="center">
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td width="100%" height="100%" valign="middle" align="center">
+		<p style="text-align: center;">
+			<img src="logo.png" width="600" height="142" alt="DBolical" class="default" style="margin: 32px 0" />
+			<a href="https://www.moddb.com"><img src="logos/moddb.png" width="467" height="206" alt="ModDB" class="moddblogo" /></a>
+			<a href="https://www.indiedb.com"><img src="logos/indiedb.png" width="428" height="206" alt="IndieDB" class="indiedblogo" /></a>
+			<a href="https://www.gamefront.com"><img src="logos/gamefront.png" width="600" height="206" alt="GameFront" class="gamefrontlogo" /></a>
+			<a href="https://modularity.games"><img src="logos/modularity.png" width="662" height="206" alt="Modularity Games Publishing" class="modularitylogo" /></a>
+			<br /><br />
+			<span class="catchcry defaultcatchcry gamefrontcatchcry indiedbcatchcry moddbcatchcry">Community &amp; collaboration</span>
+			<span class="catchcry modularitycatchcry">Publishing &amp; investment</span>
+			<br />
+			<span class="catchcry defaultcatchcry">say hello to the team</span>
+			<span class="catchcry moddbcatchcry">for mod developers</span>
+			<span class="catchcry indiedbcatchcry">for indie game developers</span>
+			<span class="catchcry gamefrontcatchcry">for all gamers</span>
+			<span class="catchcry modularitycatchcry">for mod-friendly games</span>
+			<br /><br />
+			<a href="https://www.moddb.com" class="moddb">ModDB</a> -
+			<a href="https://www.indiedb.com" class="indiedb">IndieDB</a> -
+			<a href="https://www.gamefront.com" class="gamefront">GameFront</a> -
+			<a href="https://modularity.games" class="modularity">modularity</a> -
+			<a href="mailto:hello@dbolical.com" class="contact">Contact</a>
+		</p>
+	</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" charset="UTF-8"><!--
+$(document).ready(function() {
+	var rainbowyay,
+		site = "";
+
+	$(".moddb,.indiedb,.gamefront,.modularity,.contact,.default").mouseenter(function(e){
+		resetDefault();
+		clearTimeout(rainbowyay);
+
+		if($(this).attr("class") == "default") {
+			rainbow();
+		} else {
+			site = $(this).attr("class");
+			$(".defaultbody").addClass(site+"body");
+		}
+	});
+
+	resetDefault = function() {
+		$(".defaultbody").removeClass("moddbbody").removeClass("indiedbbody").removeClass("gamefrontbody").removeClass("modularitybody").removeClass("contactbody");
+	};
+
+	function rainbow() {
+		resetDefault();
+
+		if(site == "moddb") {
+			site = "indiedb";
+		} else if(site == "indiedb") {
+			site = "gamefront";
+		} else if(site == "gamefront") {
+			site = "modularity";
+		} else {
+			site = "moddb";
+		}
+
+		$(".defaultbody").addClass(site+"body");
+		rainbowyay = setTimeout(function() { rainbow(site); }, 5000);
+	}
+
+	rainbow();
+});
+//-->
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-104975-11', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

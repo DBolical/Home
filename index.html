@@ -2,7 +2,7 @@
 	<title>DBolical</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="moddb, indiedb, dbolical, games, mods, addons, customisation, maps, models, network, community, publishing, investment" />
-	<meta name="description" content="Gaming communities are our thing, we run GameFront for PC games, IndieDB for independent games, ModDB for user-created game content and modularity.games our publishing label." />
+	<meta name="description" content="Gaming communities are our thing, we run IndieDB for independent games, ModDB for user-created game content and modularity.games our publishing label." />
 	<meta name="robots" content="index,follow"></meta>
 	<meta name="robots" content="all"></meta>
 	<link rel="shortcut icon" href="favicon.ico" />
@@ -59,14 +59,6 @@
 	.indiedbbody .indiedblogo { display: inline; }
 	.indiedbbody .default { display: none; }
 
-	.gamefrontbody div { background: #287ed5; }
-	.gamefrontbody a { color: #fff; }
-	.gamefrontbody a.gamefront, .gamefrontbody a:hover { color: #a9d2fb; text-decoration: none; }
-	.gamefrontbody .defaultcatchcry { display: none; }
-	.gamefrontbody .gamefrontcatchcry { display: inline; }
-	.gamefrontbody .gamefrontlogo { display: inline; }
-	.gamefrontbody .default { display: none; }
-
 	.modularitybody div { background: #0e2e31; background: linear-gradient(-135deg, #0e2e31 0%,#030d0e 100%); }
 	.modularitybody a { color: #fff; }
 	.modularitybody a.modularity, .modularitybody a:hover { color: #f8e800; text-decoration: none; }
@@ -88,21 +80,18 @@
 			<img src="logo.png" width="600" height="142" alt="DBolical" class="default" style="margin: 32px 0" />
 			<a href="https://www.moddb.com"><img src="logos/moddb.png" width="467" height="206" alt="ModDB" class="moddblogo" /></a>
 			<a href="https://www.indiedb.com"><img src="logos/indiedb.png" width="428" height="206" alt="IndieDB" class="indiedblogo" /></a>
-			<a href="https://www.gamefront.com"><img src="logos/gamefront.png" width="600" height="206" alt="GameFront" class="gamefrontlogo" /></a>
 			<a href="https://modularity.games"><img src="logos/modularity.png" width="662" height="206" alt="Modularity Games Publishing" class="modularitylogo" /></a>
 			<br /><br />
-			<span class="catchcry defaultcatchcry gamefrontcatchcry indiedbcatchcry moddbcatchcry">Community &amp; collaboration</span>
+			<span class="catchcry defaultcatchcry indiedbcatchcry moddbcatchcry">Community &amp; collaboration</span>
 			<span class="catchcry modularitycatchcry">Publishing &amp; investment</span>
 			<br />
 			<span class="catchcry defaultcatchcry">say hello to the team</span>
 			<span class="catchcry moddbcatchcry">for mod developers</span>
 			<span class="catchcry indiedbcatchcry">for indie game developers</span>
-			<span class="catchcry gamefrontcatchcry">for all gamers</span>
 			<span class="catchcry modularitycatchcry">for mod-friendly games</span>
 			<br /><br />
 			<a href="https://www.moddb.com" class="moddb">ModDB</a> -
 			<a href="https://www.indiedb.com" class="indiedb">IndieDB</a> -
-			<a href="https://www.gamefront.com" class="gamefront">GameFront</a> -
 			<a href="https://modularity.games" class="modularity">modularity</a> -
 			<a href="mailto:hello@dbolical.com" class="contact">Contact</a>
 		</p>
@@ -115,7 +104,7 @@ $(document).ready(function() {
 	var rainbowyay,
 		site = "";
 
-	$(".moddb,.indiedb,.gamefront,.modularity,.contact,.default").mouseenter(function(e){
+	$(".moddb,.indiedb,.modularity,.contact,.default").mouseenter(function(e){
 		resetDefault();
 		clearTimeout(rainbowyay);
 
@@ -128,7 +117,7 @@ $(document).ready(function() {
 	});
 
 	resetDefault = function() {
-		$(".defaultbody").removeClass("moddbbody").removeClass("indiedbbody").removeClass("gamefrontbody").removeClass("modularitybody").removeClass("contactbody");
+		$(".defaultbody").removeClass("moddbbody").removeClass("indiedbbody").removeClass("modularitybody").removeClass("contactbody");
 	};
 
 	function rainbow() {
@@ -137,8 +126,6 @@ $(document).ready(function() {
 		if(site == "moddb") {
 			site = "indiedb";
 		} else if(site == "indiedb") {
-			site = "gamefront";
-		} else if(site == "gamefront") {
 			site = "modularity";
 		} else {
 			site = "moddb";
